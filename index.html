@@ -10,18 +10,22 @@
             width: 100%;
             height: 600px; /* Adjust the height as needed */
         }
+        .tableauPlaceholder {
+            position: relative;
+            width: 100%;
+            height: 100%; /* Full height of the container */
+        }
+        .tableauViz {
+            width: 100%;
+            height: 100%;
+        }
         .overlay {
             position: absolute;
             bottom: 0;
             left: 0;
             width: 100%;
-            height: 30px; /* Adjust the height to cover the link bar */
+            height: 40px; /* Adjust the height to cover the Tableau bar */
             background-color: white; /* Adjust the color to match your page */
-        }
-        .tableauPlaceholder {
-            position: relative;
-            width: 100%;
-            height: calc(100% - 30px); /* Adjust the height to leave space for the overlay */
         }
     </style>
 </head>
@@ -33,7 +37,7 @@
                     <img alt='Resource Guide' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;We&#47;WellspringClinicResourceGuideTP&#47;ResourceGuide&#47;1_rss.png' style='border: none' />
                 </a>
             </noscript>
-            <object class='tableauViz' style='display:none;'>
+            <object class='tableauViz'>
                 <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
                 <param name='embed_code_version' value='3' />
                 <param name='site_root' value='' />

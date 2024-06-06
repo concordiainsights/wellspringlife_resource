@@ -8,7 +8,8 @@
         .iframe-container {
             position: relative;
             width: 100%;
-            height: 600px; /* Adjust the height as needed */
+            height: 800px; /* Adjust the height as needed */
+            overflow: hidden; /* Hide anything that overflows this container */
         }
         .tableauPlaceholder {
             position: relative;
@@ -18,14 +19,6 @@
         .tableauViz {
             width: 100%;
             height: 100%;
-        }
-        .overlay {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 40px; /* Adjust the height to cover the Tableau bar */
-            background-color: white; /* Adjust the color to match your page */
         }
     </style>
 </head>
@@ -53,7 +46,6 @@
                 <param name='language' value='en-US' />
             </object>
         </div>
-        <div class="overlay"></div>
     </div>
     <script type='text/javascript'>
         var divElement = document.getElementById('viz1717697729570');
